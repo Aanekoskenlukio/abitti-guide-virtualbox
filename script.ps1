@@ -6,13 +6,22 @@
 $env:HOMEDRIVE="C:"
 $env:HOMEPATH="\Users\" + $Env:USERNAME + "\"
 
-# Declare a full path to the ktp directory
-$FULLPATH = $env:HOMEDRIVE + $env:HOMEPATH + "ktp"
-cd $FULLPATH
+# Save full home path to its own var
+$FULLHOME = $env:HOMEDRIVE + $env:HOMEPATH
 
-# Being in the ktp dir,
-# set the ktp-jako dir relative path
-$EXAMPATH = "..\ktp-jako"
+# Declare a full path to the ktp directory
+$FULLPATH = $FULLHOME + "ktp"
+
+# Create the ktp dir if it doesnt exist
+if(!(Test-Path -Path $FULLPATH )){
+  New-Item -ItemType directory -Path $FULLPATH
+  echo ""
+  echo "Luotiin ktp-kansio onnistuneesti!"
+  echo ""
+}
+
+# Change to ktp
+cd $FULLPATH
 
 # Print out the full ktp path
 echo ""
@@ -20,6 +29,18 @@ echo "Poluksi valittu:"
 echo $FULLPATH
 echo ""
 echo ""
+
+# Being in the ktp dir,
+# set the ktp-jako dir relative path
+$EXAMPATH = "..\ktp-jako"
+
+# Create the exam ktp-jako dir if it doesnt exist
+if(!(Test-Path -Path $EXAMPATH )){
+  New-Item -ItemType directory -Path $EXAMPATH
+  echo ""
+  echo "Luotiin ktp-jako-kansio onnistuneesti!"
+  echo ""
+}
 
 # Print out the exam dir path
 echo ""
