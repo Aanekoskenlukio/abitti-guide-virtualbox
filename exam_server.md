@@ -15,7 +15,7 @@ Vagrant
 Powershell-scripti
 ```
 
-Scripti asettaa Windowsin ympäristömuuttujat arvoihin, jotka mahdollistavat koepakettien tuonnin palvelimelle.
+Scripti asettaa Windowsin ympäristömuuttujat arvoihin, jotka mahdollistavat koepakettien tuonnin palvelimelle. Se myös luo tarvittavat kansiot YTL:n ohjeiden mukaisesti ja lataa konfiguraatiotiedostot automaattisesti.
 
 ### Fyysiset laitteet
 
