@@ -12,7 +12,7 @@ Käytettävästä tietokoneesta on löydyttävä vähintään 4 GB keskusmuistia
 Virtualbox
 Vagrant
 
-[Powershell-scripti](https://github.com/Aanekoskenlukio/virtual-abitti-script-ps/releases/)
+Powershell-scripti
 ```
 
 Scripti asettaa Windowsin ympäristömuuttujat arvoihin, jotka mahdollistavat koepakettien tuonnin palvelimelle.
