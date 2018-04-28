@@ -17,7 +17,8 @@ if(!(Test-Path -Path $FULLPATH )){
   New-Item -ItemType directory -Path $FULLPATH
   echo ""
   echo "Luotiin ktp-kansio onnistuneesti!"
-  echo ""
+  echo "Ladataan VAGRANTFILE kohteesta www.abitti.fi..."
+  Invoke-WebRequest -Uri "http://static.abitti.fi/usbimg/qa/vagrant/Vagrantfile" -OutFile $FULLPATH
 }
 
 # Change to ktp
