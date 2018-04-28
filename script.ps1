@@ -18,7 +18,12 @@ if(!(Test-Path -Path $FULLPATH )){
   echo ""
   echo "Luotiin ktp-kansio onnistuneesti!"
   echo "Ladataan VAGRANTFILE kohteesta www.abitti.fi..."
-  Invoke-WebRequest -Uri "http://static.abitti.fi/usbimg/qa/vagrant/Vagrantfile" -OutFile $FULLPATH
+  
+  # Set Vagrant file destination
+  $VAGRANTPATH = $FULLPATH + "/Vagrantfile"
+  
+  # Download Vagrant file
+  Invoke-WebRequest -Uri "http://static.abitti.fi/usbimg/qa/vagrant/Vagrantfile" -OutFile $VAGRANTPATH
 }
 
 # Change to ktp
