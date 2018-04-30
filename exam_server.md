@@ -1,5 +1,5 @@
 ```
-Tätä opasta ei enää päivitetä! deprecated
+Tätä opasta ei enää päivitetä! Deprecated!
 ```
 
 # Koetilan palvelimen virtualisointi
