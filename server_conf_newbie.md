@@ -26,6 +26,8 @@ Scriptin ajamisen j채lkeen tietokoneen ruudulle tulis ilmesty채 ikkuna, jossa n�
 9. Valitse listalta `Promiscuous Mode` valinta `Allow All`
 10. Valitse `Ok`
 
+*Jos kyseinen vaihtoehto puuttuu, valitse se vaihtoehto, jossa lukee joko `ethernet` tai `wired`.
+
 Verkko on nyt onnistuneesti konfiguroitu. Jatkossa Abitti k채ytt채채 tietokoneen ethernet-porttia verkkoyhteyden jakamiseen.
 
 ## Palvelimen k채ynnistys
